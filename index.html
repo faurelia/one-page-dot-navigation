@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>No Javascript: One Page Site Dot Navigation Smooth Scroll</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
+	<style type="text/css">
+        html {
+           scroll-behavior: smooth;
+        }
+        body {
+           font-family: 'Open Sans', sans-serif;
+           font-weight: 900;
+        }
+        h3 {
+           margin: 0;
+           padding: 1em;
+           font-size: 2rem;
+           text-align: center;
+        }
+        section {
+           height: 100vh;
+        }
+        section:nth-child(odd) {
+           background: #FFFFFF;
+        }
+        section:nth-child(even) {
+           background: #EFEFEF;
+        }
+        nav {
+           position: fixed;
+           right: 20px;
+           top: 50%;
+           -webkit-transform: translateY(-50%);
+           transform: translateY(-50%);
+           display: flex;
+           flex-direction: column;
+        }
+        nav a {
+           display: flex;
+           justify-content: flex-end;
+           width: 100%;
+           text-decoration: none;
+           font-size: 1em;
+           color: #333;
+           text-indent: -9999px;
+           margin-bottom: 5px;
+        }
+        nav a:last-child {
+           margin-bottom: 0;
+        }
+        nav a:after {
+           content: '\26AC';
+           width: 1em;
+           text-align: center;
+           text-indent: 0;
+        }
+        nav a:hover {
+           color: indianred;
+           text-indent: 9999px;
+        }
+
+	</style>
+</head>
+<body>
+	<nav>
+		<a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+	</nav>
+
+	<main>
+        <section id="about">
+    		<h3>About</h3>
+    	</section>
+    	<section id="services">
+    		<h3>Services</h3>
+    	</section>
+    	<section id="portfolio">
+    		<h3>Portfolio</h3>
+    	</section>
+    	<section id="blog">
+    		<h3>Blog</h3>
+    	</section>
+    	<section id="contact">
+    		<h3>Contact</h3>
+    	</section>
+    </main>
+</body>
+</html>
